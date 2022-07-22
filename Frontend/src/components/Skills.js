@@ -41,11 +41,11 @@ export const Skills = () => {
                         <p>Voici les compétences que j'ai acquis durant ma formation<br></br> et l'ensemble de langages que je maitrise.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={photo1} width={30} alt="skills" />
+                                <img src={photo1} className="figma" alt="skills" />
                                 <h5>Figma</h5>
                             </div>
                             <div className="item">
-                                <img src={photo2} alt="skills" />
+                                <img src={photo2}  alt="skills" />
                                 <h5>GitHub</h5>
                             </div>
                             <div className="item">

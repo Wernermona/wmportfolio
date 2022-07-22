@@ -28,19 +28,25 @@ export const Projects = () => {
 
   return (
     <>
+      <div className="projectTitle">
+        <h1 className="projectText">Projets</h1>
+        <p className="projectText2">Voici l'ensemble de projets dans lesequels j'ai participé durant ma periode de formation à la Wild Code School de lyon: </p>
+      </div>
       {loading ? (
         <p>Loading...</p>
       ) : errors ? (
         <p>{errors}</p>
       ) : (
         <div>
+          
           {projetcs.map(project => {
             return (
-              <div key={project._id} style={{ width: '50%', margin: 'auto', padding: '2rem' }}>
+              
+              <div key={project._id} className="projectDiv">
                 <img src={project.img} alt={project.title} />
-                <h1>{project.title}</h1>
-                <p>{project.description}</p>
-                <ink to={project.link}>{project.link}</ink>
+                <h1 className="projecth1">{project.title}</h1>
+                <p className="projectp">{project.description}</p>
+                <p className="projectp">{project.link}</p>
               </div>
             )
           })}

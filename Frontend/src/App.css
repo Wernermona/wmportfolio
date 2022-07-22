@@ -1,4 +1,4 @@
-/************ Custom Font ************/
+/**************************************** FONTS prise*********/
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
@@ -15,7 +15,7 @@
 	font-weight: 400;
 }
 
-/************ Default Css ************/
+/************************* Reset ***/
 * {
   margin: 0;
   padding: 0;
@@ -81,7 +81,7 @@ p.success {
 p.danger {
 	color: red;
 }
-/************ Navbar Css ************/
+/******************************** HEADER ************/
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -116,6 +116,9 @@ span.navbar-text {
 
 .logoColor {
   color: white;
+}
+.nameColor {
+  color: rgb(218, 231, 32);
 }
 .logoColor2 {
   color: yellow;
@@ -161,10 +164,11 @@ span.navbar-text {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
-  
   background-position: top center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+  justify-content: center;
+
 }
 .banner .tagline {
   font-weight: 700;
@@ -174,6 +178,7 @@ span.navbar-text {
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
+  margin-left: 90px;
   display: inline-block;
 }
 .banner h1 {
@@ -183,13 +188,17 @@ span.navbar-text {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  text-align: center;
 }
 .banner p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  width: 96%;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .banner button {
   color: #fff;
@@ -197,7 +206,6 @@ span.navbar-text {
   font-size: 20px;
   margin-top: 60px;
   letter-spacing: 0.8px;
-  display: flex;
   align-items: center;
 }
 .banner button svg {
@@ -224,17 +232,17 @@ span.navbar-text {
     }
 }
 
-/************ Skills Css ************/
+/************************* Competencess ******************************************/
 .skill {
   padding: 0 0 50px 0;
   position: relative;
 }
 .skill-bx {
   background: #151515;
-  border-radius: 64px;
+  border:4px solid rgb(219, 212, 25);
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: -6px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -257,43 +265,78 @@ span.navbar-text {
   margin: 0 auto 15px auto;
 }
 .background-image-left {
-  top: 28%;
+  top: 20%;
   position: absolute;
   bottom: 0;
-  width: 40%;
-  z-index: -4;
+  width: 50%;
+  z-index: -2;
 }
 
 /************ Projects Css ************/
-.project {
-  padding: 80px 0;
-  position: relative;
-  background-color: black;
-}
-.project h2 {
-	font-size: 45px;
-	font-weight: 700;
+.projectTitle {
   text-align: center;
+
+
+  text-align: center;
+  margin-top: 120px;
+  position: relative;
 }
-.project h5 {
+.projectText {
+  font-size: 45px;
+	font-weight: 700;
+  margin-top: 30px;
   color: yellow;
 }
-.project p {
+
+.projectText2{
+  color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectDiv {
+  border:4px solid rgb(219, 212, 25);
+  text-align: center;
+  width: 70%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+
+}
+.projecth1 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-top: 30px;
+  
+  color: yellow;
+}
+
+.projectp {
   color: #B8B8B8;
   font-size: 18px;
+
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
+  
+  
 }
 
 
 
 /*********************************** CONTACT ***********************************/
 .contact {
-  background: linear-gradient(90.21deg, #412c38 -5.91%, #37284c 111.58%);
-  padding: 60px 0 200px 0;
+  margin-top: 60px;
+  background-image: url('./assets/img/footer-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;  padding: 60px 0 200px 0;
 }
 .contact img {
   width: 90%;
@@ -360,6 +403,7 @@ span.navbar-text {
 .contact form button:hover::before {
   width: 100%;
 }
+
 
 /************ Footer ************/
 .footer {
