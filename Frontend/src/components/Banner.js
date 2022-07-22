@@ -57,7 +57,6 @@ export const Banner = () => {
                 <span className="tagline">Bienvenus à Portfolio</span>
                 <h1>Salut, je m'appelle<span className="nameColor"> Werner Mona</span></h1>
                   <p>Je suis un Développeur web Full-Stack specialisé dans le Stack MERN. Actuellement je suis à la recherche d'un contrat en alternance qui me permettra d'accèder à la formation de Concepteur Développeur d'Applications.</p>
-                  <button onClick={() => console.log('connect')}>Contact <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
